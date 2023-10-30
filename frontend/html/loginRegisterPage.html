@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Custom CSS  -->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Stocks</title>
+      </head>
+      <body>
+
+          <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+          
+        </nav>
+
+
+        <div class="container-fluid">
+            <div class = "row">
+                <div class = "col-sm-12" id = "main-holder">
+                    <div class="row">
+                        <div class = "col-sm-12" id = "welcome-heading">
+                            Welcome to Stocks
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class = "col-sm-12" id = "welcome-message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur placeat libero recusandae aliquam illum molestiae nostrum facilis quibusdam, ab, dignissimos impedit numquam a aut, ut ex dolores quaerat soluta eveniet.
+                        </div>
+                    </div>
+
+                    <!-- Row for login and Register modal buttons  -->
+                    <div class = "row">
+                        <div class = "col-sm-12" id = "login-register-button-holder">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id = "login-modal-opener" >
+                                Login
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1" id = "register-modal-opener">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"><b>Login</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class = "row">
+                            <div class = "col-sm-12" id = "login-form">
+                                <form>
+                                    <div class = "row">
+                                        <div class = "col-sm-12">
+                                            <input type="text" class="form-control  margin-top-for-form-elements" id="username_login" placeholder="Username" name = "username">
+                                        </div>
+                                    </div>
+
+                                    <div class = "row">
+                                        <div class = "col-sm-12">
+                                            <input type="password" class="form-control margin-top-for-form-elements" id="password_login" placeholder="Password" name = "password">
+                                        </div>
+                                    </div>
+
+
+                                    <div class = "row margin-top-for-form-elements">
+                                        <div class = "col-sm-12">
+                                            <a href="#">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class = "row margin-top-for-form-elements">
+                                        <div class = "col-sm-12">
+                                             <button type="button" class="btn btn-primary" onclick="checkLoginCredentials()" id = "loginButtonId">Login</button>
+                                        </div>
+                                    </div>
+                                   
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Register Modal -->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"><b>Register</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class = "row">
+                            <div class = "col-sm-12" id = "register-form">
+                                <form>
+                                    
+                                    
+                                    <!-- Username -->
+                                    <div class = "row margin-top-for-form-elements">
+                                        <div class = "col-6 col-sm-6">
+                                            <input type="text" class="form-control " name = "username" id = "id_username" placeholder="Username" onblur="checkForExistingUsername()" required>
+                                            
+                                        </div>
+                                    </div>
+                                   
+
+                                    <!-- Password and confirm password -->
+                                    <div class = "row margin-top-for-form-elements">
+                                        <div class = "col-6 col-sm-6">
+                                            <input class="form-control " type = "password" name = "password" id = "id_password" placeholder="Password" required>
+                                        </div>
+
+                                        <div class = "col-6 col-sm-6">
+                                            <input class="form-control " type = "password" name = "conform_password" id = "id_confirm_password" placeholder="Confirm Password" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Submit Button -->
+                                    <div class = "row margin-top-for-form-elements">
+                                        
+                                        <div class = "col-4 col-sm-4">
+                                           <button type="button" class="btn btn-primary" onclick = "checkRegistrationCredentials()" id = "registerButtonId">Register</button> 
+                                        </div> 
+                                    
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+        <!-- Local scripts -->
+        <script type="text/javascript" src="../javascript/scripts.js">
+
+        </script>
+
+
+      </body>
+    </html>
