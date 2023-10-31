@@ -1,9 +1,9 @@
-<?php
+<?php 
    
-    //Required files
-    require_once('../rabbitmqphp_example/path.inc');
-    require_once('../rabbitmqphp_example/get_host_info.inc');
-    require_once('../rabbitmqphp_example/rabbitMQLib.inc');
+    // Required files
+    require_once('/home/git/IT490F23/rabbitmqphp_example/path.inc');
+    require_once('/home/git/IT490F23/rabbitmqphp_example/get_host_info.inc');
+    require_once('/home/git/IT490F23/rabbitmqphp_example/rabbitMQLib.inc');
 
 
 
@@ -54,5 +54,5 @@
    
     //processes the request sent by client
     $server->process_requests('requestProcessor');
- 
-    ?>
+
+?>
