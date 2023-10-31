@@ -1,2 +1,2 @@
 # IT490F23
-IT490 Course Work Fall 2023 NJIT
+IT490 Coursework Fall 2023 NJIT
