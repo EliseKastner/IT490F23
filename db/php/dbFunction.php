@@ -22,7 +22,7 @@
         $h_password = hashPassword($password, $salt);
         
         //Query for a new user
-        $newuser_query = "INSERT INTO user VALUES ('$username', '$email', '$h_password', '$salt', '$firstname', '$lastname')";
+        $newuser_query = "INSERT INTO Users  VALUES ('$username', '$h_password', '$salt')";
         
         $result = $connection->query($newuser_query);
         
